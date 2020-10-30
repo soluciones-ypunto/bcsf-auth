@@ -1,5 +1,5 @@
 {
-    "name": "ypunto/bcsf-auth",
+    "name": "soluciones-ypunto/bcsf-auth",
     "description": "Ypunto/Authentication plugin for CakePHP",
     "type": "cakephp-plugin",
     "license": "MIT",
