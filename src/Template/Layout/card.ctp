@@ -2,6 +2,9 @@
 /**
  * @var \App\View\AppView $this
  */
+
+use Cake\Core\Configure;
+
 ?>
 <!doctype html>
 <html class="h-100" lang="en">
@@ -24,18 +27,20 @@
 
 <body class="h-100">
 <main class="h-100" role="main">
-    <div class="container-fluid h-100 bg-white">
+    <div class="container-fluid h-100 bg-light">
         <div class="row h-100 align-items-center">
             <div class="col-md-7 col-lg-6 col-xl-4 mx-auto">
                 <?= $this->Flash->render() ?>
 
-                <div class="card">
+                <div class="card shadow-sm">
                     <div class="brand-block text-center my-5" style="height: 70px">
-                        <?= $this->Html->image('logo-bcsf-color.png', [
+                        <?= $this->Html->image(Configure::read(
+                                'Ypunto/Authentication.App.icon',
+                                'Ypunto/Authentication.app-logo-placeholder.png'
+                        ), [
                             'class' => 'mr-4',
                             'style' => 'max-height: 100%; width: auto',
                         ]) ?>
-
 
                     </div>
                     <div class="card-body text-center px-4 px-lg-5">
@@ -49,7 +54,7 @@
                 <div class="d-flex justify-content-between small py-4">
                     <span title="<?= __('Bolsa de Comercio de Santa Fe') ?>" class="text-muted"><?= __('BCSF') ?> &copy; <?= date('Y') ?></span>
                     <a title="<?= __('Soluciones yPunto') ?>" href="https://solucionesypunto.com" target="_blank" class="text-muted">
-                        <?= $this->Html->image('ypunto-logo-min.png', ['style' => 'max-width: 140px;']) ?>
+                        <?= $this->Html->image('Ypunto/Authentication.ypunto-logo-min.png', ['style' => 'max-width: 140px;']) ?>
 
                     </a>
                 </div>
