@@ -1,0 +1,26 @@
+{
+    "name": "ypunto/bcsf-auth",
+    "description": "Ypunto/Authentication plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "require": {
+        "php": "^7.0",
+        "ext-json": "*",
+        "cakephp/cakephp": "^3.5",
+        "cakephp/authentication": "^1.1",
+        "league/oauth2-client": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7.14|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ypunto\\Authentication\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ypunto\\Authentication\\Test\\": "tests/"
+        }
+    }
+}
